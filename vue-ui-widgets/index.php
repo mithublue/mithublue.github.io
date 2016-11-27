@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="vue-ui-widgets/css/vue-ui-widgets.css" />
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-inverse navbar-fixed-top mb0">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Vue UI Widgets</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://github.com/mithublue/Vue-UI-Widgets" target="_blank">Github</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How to make <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="main_menu">
+                                <li data-menuanchor="page1"><a href="#installation">Installation</a></li>
+                                <li data-menuanchor="page2"><a href="#accordion">Accordion</a></li>
+                                <li data-menuanchor="page3"><a href="#alert">Alert</a></li>
+                                <li data-menuanchor="page4"><a href="#card">Card</a></li>
+                                <li data-menuanchor="page5"><a href="#chip">Chips</a></li>
+                                <li data-menuanchor="page6"><a href="#modal">Modal</a></li>
+                                <li data-menuanchor="page7"><a href="#notice">Notice</a></li>
+                                <li data-menuanchor="page8"><a href="#tabs">Tabs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="jumbotron text-center" style="padding: 100px">
+            <h1>Vue UI Widgets</h1>
+            <p>Vue powered UI Elements that lets you add and modify common widgets in your application quite easily </p>
+            <p><a class="btn btn-warning btn-lg br0" href="https://github.com/mithublue/Vue-UI-Widgets" role="button" target="_blank"><i class="glyphicon glyphicon-pushpin"></i> Fork on Github</a>
+                <a class="btn btn-primary btn-lg br0" href="https://github.com/mithublue/Vue-UI-Widgets/archive/master.zip" role="button"><i class="glyphicon glyphicon-download"></i> Download</a></p>
+        </div>
+    </div>
+</div>
+<?php include_once 'vue-ui-widgets/widgets/vue.widgets.php';?>
+<div class="container" id="fullpage">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="app">
+                <div class="section" id="section0">
+                    <div id="installation">
+                        <h3>Installation</h3>
+                        <p>Include the following files into your project</p>
+                        <ul>
+                            <li>vue-ui-widgets.css</li>
+                            <li>vue.js / vue.min.js</li>
+                            <li>vue-ui-widgets.js</li>
+                            <li>vue.widgets.php</li>
+                        </ul>
+                        <p>S:N: place vue-ui-widgets.js just after vue.js/vue.min.js file</p>
+                        <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/vue-ui-widgets.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;?php include_once 'components/vue.widgets.php';?&gt;
+
+&lt;script src="js/vue.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/vue-ui-widgets.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+                    </div><!--installation-->
+                </div><!--section0-->
+
+                <div class="section" id="section1">
+                    <!--accordion-->
+                    <div id="accordion" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Accordion</h3>
+                            <accordion>
+                                <div slot="acc-panel">
+                                    <button>Section 1</button>
+                                    <div style="padding: 15px 10px !important;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+
+                                    <button>Section 2</button>
+                                    <div style="padding: 15px 10px !important;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+
+                                    <button>Section 3</button>
+                                    <div style="padding: 15px 10px !important;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                            </accordion>
+                        </div>
+                        <h4>HTML</h4>
+                        <pre><code>&lt;accordion&gt;
+        &lt;div slot="acc-panel"&gt;
+            &lt;button&gt;Section 1&lt;/button&gt;
+            &lt;div&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;button&gt;Section 2&lt;/button&gt;
+            &lt;div&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;button&gt;Section 3&lt;/button&gt;
+            &lt;div&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/accordion&gt;
+</code></pre>
+                    </div><!--accordion-->
+                </div><!--section1-->
+
+                <div class="section" id="section2">
+                    <!--alert-->
+                    <div id="alert" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Alert</h3>
+                            <alert :type="'danger'"><div slot="alert-data">This is danger alert !</div></alert>
+                            <alert :type="'success'"><div slot="alert-data">This is success alert !</div></alert>
+                            <alert :type="'info'"><div slot="alert-data">This is success alert !</div></alert>
+                            <alert :type="'warning'"><div slot="alert-data">This is success alert !</div></alert>
+                        </div>
+
+                        <pre><code>&lt;alert :type="'danger'"&gt;&lt;div slot="alert-data"&gt;This is danger alert !&lt;/div&gt;&lt;/alert&gt;
+&lt;alert :type="'success'"&gt;&lt;div slot="alert-data"&gt;This is success alert !&lt;/div&gt;&lt;/alert&gt;
+&lt;alert :type="'info'"&gt;&lt;div slot="alert-data"&gt;This is success alert !&lt;/div&gt;&lt;/alert&gt;
+&lt;alert :type="'warning'"&gt;&lt;div slot="alert-data"&gt;This is success alert !&lt;/div&gt;&lt;/alert&gt;
+</code></pre>
+                    </div>
+                    <!--alert-->
+                </div><!--section2-->
+
+                <div class="section" id="section3">
+                    <!--card-->
+                    <div id="card" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Card</h3>
+                            <card size="400">
+                                <div slot="header"><h3>Card Header</h3></div>
+                                <div slot="content">
+                                    <img src="images/nature.jpg" alt="Nature" width="100%"><br><br>
+                                    This is some content for card header to show you how it works ! Hope, You will like it ! Enjoy !
+                                </div>
+                                <div slot="footer">This is card footer</div>
+                            </card>
+                        </div>
+
+                        <pre><code>&lt;card size="400"&gt;
+        &lt;div slot="header"&gt;&lt;h3&gt;Card Header&lt;/h3&gt;&lt;/div&gt;
+        &lt;div slot="content"&gt;
+            &lt;img src="images/nature.jpg" alt="Nature" width="100%"&gt;&lt;br&gt;&lt;br&gt;
+            This is some content for card header to show you how it works ! Hope, You will like it ! Enjoy !
+        &lt;/div&gt;
+        &lt;div slot="footer"&gt;This is card footer&lt;/div&gt;
+    &lt;/card&gt;
+</code></pre>
+                    </div>
+                    <!--card-->
+                </div><!--section3-->
+
+                <div class="section" id="section4">
+                    <!--chips-->
+                    <div id="chip" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Chip</h3>
+                            <chip :removable="true">
+                                <div slot="chip-data" >
+                                    <img src="css/avatar.png" alt="Person" />
+                                    John
+                                </div>
+                            </chip>
+                            <chip :removable="true">
+                                <div slot="chip-data" >
+                                    <img src="css/avatar.png" alt="Person" />
+                                    Doe
+                                </div>
+                            </chip>
+                        </div>
+
+                        <pre><code>&lt;chip :removable="true"&gt;
+&lt;div slot="chip-data" &gt;
+&lt;img src="css/avatar.png" alt="Person" /&gt;
+John
+&lt;/div&gt;
+&lt;/chip&gt;
+&lt;chip :removable="false"&gt;
+&lt;div slot="chip-data" &gt;
+&lt;img src="css/avatar.png" alt="Person" /&gt;
+Doe
+&lt;/div&gt;
+&lt;/chip&gt;
+</code></pre>
+                    </div>
+                    <!--chips-->
+                </div><!--section4-->
+
+                <div class="section" id="section5">
+                    <!--modal-->
+                    <div id="modal" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Modal</h3>
+                            <button @click="show = true" class="btn btn-success br0">Show Modal</button>
+                            <modal :show.sync="show">
+                                <div slot="header">
+                                    <h3>This is custom header</h3>
+                                </div>
+                                <div slot="body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                                <div slot="footer" class="text-left">This is a footer</div>
+                            </modal>
+                        </div>
+
+                        <pre><code>&lt;button @click="show = true"&gt;Show Modal&lt;/button&gt;
+&lt;modal :show.sync="show"&gt;
+    &lt;div slot="header"&gt;
+        &lt;h3&gt;This is custom header&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div slot="footer"&gt;This is custom footer&lt;/div&gt;
+&lt;/modal&gt;
+</code></pre>
+                        <pre><code>var app = new Vue({
+    el : '#app',
+    data : {
+        show : false,
+    }
+});
+</code></pre>
+                    </div>
+                    <!--modal-->
+                </div><!--section5-->
+
+                <div class="section" id="section6">
+                    <!--notice-->
+                    <div id="notice" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Notice</h3>
+                            <notice :type="'danger'">
+                                <div slot="notice-data">
+                                    This is notice
+                                </div>
+                            </notice>
+                            <notice :type="'success'">
+                                <div slot="notice-data">
+                                    This is notice
+                                </div>
+                            </notice>
+                            <notice :type="'info'">
+                                <div slot="notice-data">
+                                    This is notice
+                                </div>
+                            </notice>
+                            <notice :type="'warning'">
+                                <div slot="notice-data">
+                                    This is notice
+                                </div>
+                            </notice>
+                        </div>
+
+                        <pre><code>&lt;notice :type="'danger'"&gt;
+    &lt;div slot="notice-data"&gt;
+        This is notice
+    &lt;/div&gt;
+&lt;/notice&gt;
+&lt;notice :type="'success'"&gt;
+    &lt;div slot="notice-data"&gt;
+        This is notice
+    &lt;/div&gt;
+&lt;/notice&gt;
+&lt;notice :type="'info'"&gt;
+    &lt;div slot="notice-data"&gt;
+        This is notice
+    &lt;/div&gt;
+&lt;/notice&gt;
+&lt;notice :type="'warning'"&gt;
+    &lt;div slot="notice-data"&gt;
+        This is notice
+    &lt;/div&gt;
+&lt;/notice&gt;
+</code></pre>
+                    </div>
+                    <!--notice-->
+                </div><!--section6-->
+
+                <div class="section" id="section7">
+                    <!--tabs-->
+                    <div id="tabs" style="padding-top: 50px;">
+                        <div class="mb20">
+                            <h3>Tabs</h3>
+                            <tabs
+                                :tabnames = "['Tab 1', 'Tab 2']"
+                            >
+                                <div slot="tabdata">
+                                    <div>
+                                        <h3>Tab 1 Heading</h3>
+                                        <div>
+                                            <p>
+                                                This is tab1 content
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>tab 2 Heading</h3>
+                                        <p>
+                                            Anything can be added how i want !
+                                        </p>
+                                    </div>
+                                </div>
+                            </tabs>
+                        </div>
+
+                        <pre><code>&lt;tabs
+    :tabnames = "['Tab 1', 'Tab 2']"
+    &gt;
+    &lt;div slot="tabdata"&gt;
+        &lt;div&gt;
+            &lt;h3&gt;Tab 1 Heading&lt;/h3&gt;
+            &lt;div&gt;
+                &lt;p&gt;
+                    This is tab1 content
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h3&gt;tab 2 Heading&lt;/h3&gt;
+            &lt;p&gt;
+                Anything can be added how i want !
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/tabs&gt;
+</code></pre>
+                    </div>
+                    <!--tabs-->
+                </div><!--section7-->
+
+            </div>
+            <script src="vue-ui-widgets/js/vue.js"></script>
+            <script src="vue-ui-widgets/js/vue-ui-widgets.js"></script>
+            <script>
+                var app = new Vue({
+                    el : '#app',
+                    data : {
+                        show : false,
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/PageScroll2id.js"></script>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $("#main_menu a").mPageScroll2id();
+        });
+    })(jQuery);
+</script>
+
+
+</body>
+</html>
