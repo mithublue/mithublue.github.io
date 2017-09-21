@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<h1>Sectionizr</h1>
+<ul class="sectionizr-demo">
+    <li><a href="" data-target="">All</a></li>
+    <li><a href="" data-target="nature">Nature</a></li>
+    <li><a href="" data-target="animal">Animal</a></li>
+    <li><a href="" data-target="building">Building</a></li>
+    <li><a href="" data-target="river">River</a></li>
+</ul>
+<div class="items">
+    <div data-key="animal">
+        <img src="assets/images/animal-1.jpg" alt="">
+    </div>
+    <div data-key="building">
+        <img src="assets/images/buildings-1.jpg" alt="">
+    </div>
+    <div data-key="nature">
+        <img src="assets/images/nature-2.jpg" alt="">
+    </div>
+    <div data-key="nature">
+        <img src="assets/images/nature-3.jpg" alt="">
+    </div>
+    <div data-key="river,nature">
+        <img src="assets/images/river-3.jpg" alt="">
+    </div>
+    <div data-key="building">
+        <img src="assets/images/buildings-2.jpg" alt="">
+    </div>
+    <div data-key="nature">
+        <img src="assets/images/nature-1.jpg" alt="">
+    </div>
+    <div data-key="building">
+        <img src="assets/images/buildings-3.jpg" alt="">
+    </div>
+    <div data-key="river,nature">
+        <img src="assets/images/river-2.jpg" alt="">
+    </div>
+    <div data-key="building">
+        <img src="assets/images/buildings-4.jpg" alt="">
+    </div>
+    <div data-key="animal">
+        <img src="assets/images/animal-2.jpg" alt="">
+    </div>
+    <div data-key="river,nature">
+        <img src="assets/images/river-1.jpg" alt="">
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="dist/js/jquery.sectionizr.js"></script>
+<script>
+    $('.sectionizr-demo').sectionizr({
+        content : '.items'
+    });
+</script>
+</body>
+</html>

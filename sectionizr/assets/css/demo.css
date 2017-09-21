@@ -1,0 +1,28 @@
+ul {
+  overflow: hidden;
+}
+ul li {
+  list-style: none;
+  float: left;
+  border: 1px solid #000;
+}
+ul a {
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  font-size: 20px;
+}
+.items {
+  overflow: hidden;
+}
+.items div {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 3px;
+}
+.items div img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=demo.css.map */
